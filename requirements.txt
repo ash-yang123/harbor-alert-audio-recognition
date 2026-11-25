@@ -1,4 +1,4 @@
-Numpy
+NumPy
 SciPy
 Matplotlib #optional if you don't want to plot the audio to visualize
 
