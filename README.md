@@ -1,3 +1,4 @@
+
 # Harbor-Alert-Audio-Recognition
 
 ## Overview 
@@ -17,8 +18,10 @@ This program processes a WAV file through a couple of different steps:
 ## Recognized Signal Patterns
 
 **One Blast Signal**: 1 second blast followed by 2 seconds of silence.
+<img width="636" height="477" alt="Screenshot 2026-11-24 at 11 19 46 PM" src="https://github.com/user-attachments/assets/35743d43-6a7f-44c6-abae-44a5aa5d8128" />
 
 **Two Blast Signal**: 0.5 second blast, 0.5 seconds of silence, 0.5 second blast, and then 2 seconds of silence.
+<img width="637" height="478" alt="Screenshot 2026-11-24 at 11 20 38 PM" src="https://github.com/user-attachments/assets/a7162b4c-af19-47e3-b8c3-16f33ed80aad" />
 
 ## Files
 
