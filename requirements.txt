@@ -1,3 +1,5 @@
 Numpy
 SciPy
 Matplotlib #optional if you don't want to plot the audio to visualize
+
+pip install numpy scipy matplotlib
