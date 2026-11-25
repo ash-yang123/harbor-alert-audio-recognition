@@ -23,6 +23,8 @@ This program processes a WAV file through a couple of different steps:
 ## Files
 
 - **main.py**: Reads a WAV recording and runs it through the audio recognition pipeline
+- **synthetic_audio.py**: Creates a synthetic audio with adjustable frequency, gap or no gap, repeats, and time of blasts.
+- **audio_processing.py**: Has peak finding, segmentation, and classification of blasts functions.
 
 
 
