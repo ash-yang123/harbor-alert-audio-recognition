@@ -17,6 +17,7 @@ This program processes a WAV file through a couple of different steps:
 ## Recognized Signal Patterns
 
 **One Blast Signal**: 1 second blast followed by 2 seconds of silence.
+
 **Two Blast Signal**: 0.5 second blast, 0.5 seconds of silence, 0.5 second blast, and then 2 seconds of silence.
 
 ## Files
