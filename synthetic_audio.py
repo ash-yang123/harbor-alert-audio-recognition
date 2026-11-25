@@ -1,15 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-sampling_rate = 44100 #data points per second
-target_freq = 800 #target frequency
+sampling_rate = 44100 # data points per second
+target_freq = 800 # target frequency
 
-def sound(freq, gap, num_repeats, blast_time):
+# creates a synthetic sound with gaussian noise
+def sound(freq, gap, num_repeats, blast_time): # gap is whether or not there is a 0.5 second silence between the two beeps
     signal = []
     t = np.linspace(0,blast_time,int(sampling_rate*blast_time))
     tone = np.sin(2*np.pi*freq*t)
     
-    #add different silences
+    # add different silences
     silence05 = np.zeros(int(sampling_rate/2))
     silence2 = np.zeros(int(sampling_rate*2))
     
@@ -23,9 +24,9 @@ def sound(freq, gap, num_repeats, blast_time):
     for i in range(num_repeats):
         repeatSignal = np.concatenate([repeatSignal, signal])
         
-    repeatSignal = repeatSignal + np.random.normal(0, 0.1, len(repeatSignal)) #adds the gaussion noise to better simulate the real world
+    repeatSignal = repeatSignal + np.random.normal(0, 0.1, len(repeatSignal)) # adds the gaussion noise to better simulate the real world
 
-    #plots the synthetic audio (optional)
+    # plots the synthetic audio (optional)
     plt.plot(repeatSignal)
     plt.show()
     
